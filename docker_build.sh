@@ -1,1 +1,1 @@
-docker build -t web_archive .
+docker build -t webxiv .
