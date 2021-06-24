@@ -10,8 +10,22 @@
       -o-background-size: cover;
       background-size: cover;
     }
-    input, select, textarea, button{
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+    input, select, textarea{
       font-family: Helvetica;
+      background-color:black;
+      color:white;
+      border: 1px solid white;
+      border-collapse: collapse;
+      font-size: "14px";
+    }
+    button{
+      font-family: Helvetica;
+      background-color:black;
+      color:white;
     }
   </style>
 </head>
@@ -21,25 +35,15 @@
 <div id="main content" style="color: white; text-align: center">
   <br>
   <h1>Alessandro Lussana</h1>
-    <form action="about/">
-      <input type="submit" style="background-color:black; color:white" value="About Me"/>
-    </form>
-    <br>
-    <form action="contacts/">
-      <input type="submit" style="background-color:black; color:white" value="Contacts"/>
-    </form>
-    <br>
-    <form action="WebXiv/">
-      <input type="submit" style="background-color:black; color:white" value="My Archive"/>
-    </form>
-    <br>
-    <form action="NeXiv/">
-      <input type="submit" style="background-color:black; color:white" value="My Nextcloud"/>
-    </form>
-    <br>
-    </p>You landed on my personal web server. Welcome.</p>
-    <br>
-    <img src="images/rbp4.png" width="333" height="222">
+  <button onclick="location.href = '../';" class="float-left submit-button">Home</button>
+  <button onclick="location.href = '../about/';" class="float-left submit-button">About Me</button>
+  <button onclick="location.href = '../contacts/';" class="float-left submit-button">Contact</button>
+  <button onclick="location.href = '../WebXiv/';" class="float-left submit-button">My Archive</button>
+  <button onclick="location.href = '../NeXiv/';" class="float-left submit-button">My Nextcloud</button>
+  <br><br>
+  </p>You landed on my personal web server. Welcome.</p>
+  <br>
+  <img src="images/rbp4.png" width="333" height="222">
 </div>
 </body>
 </html>

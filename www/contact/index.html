@@ -2,56 +2,7 @@
 <html>
 <head>
   <title>Alessandro Lussana</title>
-  <style>
-    html {
-      background: url(../images/mikael-gustafsson-amongtrees_dark.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-    table, th, td {
-      border: 1px solid white;
-      border-collapse: collapse;
-    }
-    input, select, textarea{
-      font-family: Helvetica;
-      background-color:black;
-      color:white;
-      border: 1px solid white;
-      border-collapse: collapse;
-      font-size: "14px";
-    }
-    button{
-      font-family: Helvetica;
-      background-color:black;
-      color:white;
-    }
-    .center {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    a:link {
-      color: cyan;
-      background-color: transparent;
-      text-decoration: none;
-    }
-    a:visited {
-      color: lightgreen;
-      background-color: transparent;
-      text-decoration: none;
-    }
-    a:hover {
-      color: yellow;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-    a:active {
-      color: yellow;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -66,10 +17,29 @@
   <button onclick="location.href = '../NeXiv/';" class="float-left submit-button">My Nextcloud</button>
   <br><br>
 
-  <h2>Contacts</h2>
+  <h2>Contact</h2>
 
   <p style="width: 260px; padding: 5px; border: 1px solid white; margin-left: auto; margin-right: auto">@<a href="https://www.iannaconelab.com/">Dynamics of Immune Responses</a><br>@<a href="https://research.hsr.it/en/centers/omics-sciences.html">Centre for Omics Sciences</a> (COSR)<br><br>San Raffaele Scientific Institute<br>Via Olgettina 58<br>20132 Milan, Italy<br><br>E-mail: lussana.alessandro@hsr.it<br>Office: +39 02 2643 4740<br></p>
   <br>
+
+<form>
+  <h2>Send Me a Message</h2>
+  <label for="address">Your E-mail</label><br>
+  <input type="text" name="address", id="address" size=30 maxlength="100" required>
+  <br><br>
+  <label for="name">Your Name</label><br>
+  <input type="text" name="name", id="name" size=30 maxlength="100" required>
+  <br><br>
+  <label for="message">Your Message</label><br>
+  <input type="text" name="message" id="message" maxlength="5000" size=40 style="height:250px">
+  <br><br>
+  <input type="submit" id="send" value="Send">
+</form>
+<br><br>
+
+</div>
+
+  <!--
   <p>Currently active contacts:</p>
   <table class="center" style="width:35%; white-space: nowrap;">
     <tr>
@@ -101,6 +71,9 @@
       <td>Personal Address 2</td>
     </tr>
   </table>
-</div>
+  -->
+
 </body>
 </html>
+
+

@@ -14,8 +14,18 @@
       border: 1px solid white;
       border-collapse: collapse;
     }
-    input, select, textarea, button{
+    input, select, textarea{
       font-family: Helvetica;
+      background-color:black;
+      color:white;
+      border: 1px solid white;
+      border-collapse: collapse;
+      font-size: "14px";
+    }
+    button{
+      font-family: Helvetica;
+      background-color:black;
+      color:white;
     }
     .center {
       margin-left: auto;
@@ -29,22 +39,12 @@
 <div id="main content" style="color: white; text-align: center; margin-left: auto; margin-right: auto; font-family: helvetica">
   <br>
   <h1>Alessandro Lussana</h1>
-  <form action="../">
-    <input type="submit" style="background-color:black; color:white" value="Home"/>
-  </form>
-  <br>
-  <form action="../about/">
-    <input type="submit" style="background-color:black; color:white" value="About Me"/>
-  </form>
-  <br>
-  <form action="../contacts/">
-    <input type="submit" style="background-color:black; color:white" value="Contacts"/>
-  </form>
-  <br>
-  <form action="../NeXiv/">
-    <input type="submit" style="background-color:black; color:white" value="My Nextcloud"/>
-  </form>
-  <br>
+  <button onclick="location.href = '../';" class="float-left submit-button">Home</button>
+  <button onclick="location.href = '../about/';" class="float-left submit-button">About Me</button>
+  <button onclick="location.href = '../contacts/';" class="float-left submit-button">Contact</button>
+  <button onclick="location.href = '../WebXiv/';" class="float-left submit-button">My Archive</button>
+  <button onclick="location.href = '../NeXiv/';" class="float-left submit-button">My Nextcloud</button>
+  <br><br>
 
   <h2>WebXiv</h2>
   
