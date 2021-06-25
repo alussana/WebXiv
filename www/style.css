@@ -1,0 +1,23 @@
+html { 
+  background: url(images/mikael-gustafsson-amongtrees_dark.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+input, select, textarea{
+  font-family: Helvetica;
+  background-color:black;
+  color:white;
+  font-size: 14px;
+}
+button{
+  font-family: Helvetica;
+  background-color:black;
+  color:white;
+  font-size: 14px
+}

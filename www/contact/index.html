@@ -11,33 +11,40 @@
   <br>
   <h1>Alessandro Lussana</h1>
   <button onclick="location.href = '../';" class="float-left submit-button">Home</button>
-  <button onclick="location.href = '../about/';" class="float-left submit-button">About Me</button>
-  <button onclick="location.href = '../contacts/';" class="float-left submit-button">Contact</button>
-  <button onclick="location.href = '../WebXiv/';" class="float-left submit-button">My Archive</button>
-  <button onclick="location.href = '../NeXiv/';" class="float-left submit-button">My Nextcloud</button>
-  <br><br>
+  <button onclick="location.href = '../about/';" class="float-left submit-button">About</button>
+  <button onclick="location.href = '../contact/';" class="float-left submit-button">Contact</button>
+  <button onclick="location.href = '../WebXiv/';" class="float-left submit-button">Archive</button>
+  <button onclick="location.href = '../NeXiv/';" class="float-left submit-button">Nextcloud</button>
+  <br><br><br>
 
+  <h2>Contact</h2>
+  <p>Send me a message. [under construction]</p>
+  <br>
+  <form>
+    <label for="address">Your E-mail:</label><br>
+    <input type="text" name="address", id="address" size=30 maxlength="100" required>
+    <br><br>
+    <label for="name">Your Name:</label><br>
+    <input type="text" name="name", id="name" size=30 maxlength="100" required>
+    <br><br>
+    <label for="message">Your Message:</label><br>
+    <textarea name="message" id="message" rows="10" cols="40" maxlength="1000" wrap="hard" required></textarea>
+    <br><br>
+    <input type="checkbox" name="consent" id="consent" required>
+    <label for="consent">I give my consent to share the content of this form with the owner of this web server.</label>
+    <br><br><br>
+    <input class="button" type="submit" id="send" value="Send">
+  </form>
+<br><br>
+
+</div>
+
+  <!--
   <h2>Contact</h2>
 
   <p style="width: 260px; padding: 5px; border: 1px solid white; margin-left: auto; margin-right: auto">@<a href="https://www.iannaconelab.com/">Dynamics of Immune Responses</a><br>@<a href="https://research.hsr.it/en/centers/omics-sciences.html">Centre for Omics Sciences</a> (COSR)<br><br>San Raffaele Scientific Institute<br>Via Olgettina 58<br>20132 Milan, Italy<br><br>E-mail: lussana.alessandro@hsr.it<br>Office: +39 02 2643 4740<br></p>
   <br>
-
-<form>
-  <h2>Send Me a Message</h2>
-  <label for="address">Your E-mail</label><br>
-  <input type="text" name="address", id="address" size=30 maxlength="100" required>
-  <br><br>
-  <label for="name">Your Name</label><br>
-  <input type="text" name="name", id="name" size=30 maxlength="100" required>
-  <br><br>
-  <label for="message">Your Message</label><br>
-  <input type="text" name="message" id="message" maxlength="5000" size=40 style="height:250px">
-  <br><br>
-  <input type="submit" id="send" value="Send">
-</form>
-<br><br>
-
-</div>
+  -->
 
   <!--
   <p>Currently active contacts:</p>
@@ -75,5 +82,3 @@
 
 </body>
 </html>
-
-
