@@ -1,16 +1,20 @@
 html {
-  background: url(../images/mikael-gustafsson-amongtrees_dark.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  }
+}
 header{
   color: white;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-family: helvetica
+}
+body {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
 }
 main{
   color: white;
@@ -114,4 +118,18 @@ img.cv {
   padding: 3px;
   display: inline-block;
   vertical-align: middle;
+}
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.my-content {
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  background-color: white;
 }
