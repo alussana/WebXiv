@@ -1,0 +1,36 @@
+﻿//$(document).ready(function(){
+/*
+	$('.btn-open', '#menu').click(function(){
+		$(this).toggleClass('opened');
+		$(this).next('.subnav').toggleClass('opened');
+	})
+*/
+//})
+$('#collapse-nav').on('shown.bs.collapse', function () {
+	$('body').addClass('fixed-body')
+});
+$('#collapse-nav').on('hidden.bs.collapse', function () {
+	$('body').removeClass('fixed-body');
+});
+
+
+$('.btn.open').click(function(){
+	//console.log('hello');
+	$(this).next('.submenu').toggleClass('opened');
+	//e.preventDefault();
+})
+$('.btn.back').click(function(){
+	//console.log('hello');
+	$(this).closest('.submenu').toggleClass('opened');
+	//e.preventDefault();
+})
+
+$('img').bind('contextmenu', function(e) {
+    return false;
+});
+$('.carousel-item').bind('contextmenu', function(e) {
+    return false;
+});
+$('.img-header').bind('contextmenu', function(e) {
+    return false;
+});
