@@ -7,23 +7,62 @@
 </head>
 <body>
   <div id="particles-js"></div>
-  <script src="../particles.js"></script>
-  <script src="../app.js"></script> 
+  <script src="particles.js"></script>
+  <script src="app.js"></script> 
   <header>
     <h1>Alessandro Lussana</h1>
-    <button onclick="location.href = '.';">Home</button>
-    <button onclick="location.href = '../about/';">About</button>
-    <button onclick="location.href = '../contact/';">Contact</button>
-    <button onclick="location.href = '../WebXiv/';">Archive</button>
-    <button onclick="location.href = '../NeXiv/';">Nextcloud</button>
+    </p>You landed on my personal web server. Welcome.</p>
     <br><br><br>
   </header>
   <main>
-    </p>You landed on my personal web server. Welcome.</p>
-    <br>
-    <figure>
-      <img src="images/rbp4.png" width="333" height="222">
-    </figure>
+    <table>
+      <tr>
+        <td>
+          <h2>About Me</h2>
+          <p>My resume &rarr; <a href="docs/resume_AlessandroLussana.pdf"><img class="cv" src="images/cv_icon.png"></a><br></p>
+          <p style="width: 180px; padding: 5px; margin-left: auto; margin-right: auto">
+            <a href="https://research.hsr.it/en/centers/omics-sciences/alessandro-lussana.html" target="_blank"><img class="cosr" src="images/cosr_logo.png"></a><br>
+            <a href="https://github.com/alussana" target="_blank"><img class="github" src="images/github_logo_negative.png"></a><br>
+            <a href="https://www.linkedin.com/in/alessandro-lussana-1947a770/" target="_blank"><img class="linkedin" src="images/linkedin_logo.png"></a><br>
+            <a href="https://twitter.com/a_lussana" target="_blank"><img class="twitter" src="images/twitter_logo.png" style="padding-bottom: 7px"></a>
+            <a href="https://orcid.org/0000-0002-4733-0934" target="_blank"><img class="orcid" src="images/orcid_logo.png" style="padding-bottom: 7px"></a>
+            <a href="https://www.tuni.fi/en/alessandro-lussana" target="_blank"><img class="tuni" src="images/tuni_logo.png" style="padding-top: 2px"></a><br>
+            <a href="https://bioconductor.org/packages/AffiXcan" target="_blank"><img class="bioc" src="images/bioc_logo.png"></a><br>
+          </p>
+        <br><br>
+        </td>
+        <td>
+          <h2>Contact</h2>
+          <p>Send me a message.</p>
+          <br>
+          <form action="message.php" method="POST">
+            <label for="address">Your E-mail:</label><br>
+            <input type="text" name="address", id="address" size=30 maxlength="100" required>
+            <br><br>
+            <label for="name">Your Name:</label><br>
+            <input type="text" name="name", id="name" size=30 maxlength="100" required>
+            <br><br>
+            <label for="message">Your Message:</label><br>
+            <textarea name="message" id="message" rows="10" cols="30" maxlength="1000" wrap="hard" required></textarea>
+            <br><br><br>
+            <input class="button" type="submit" id="send" value="Send">
+          </form>
+        </td>
+        <td>
+          <h2>WebXiv</h2>
+          <p>Browse my files. Authentication needed.</p>
+          <form action="../Xiv/">
+            <input class="button" type="submit" value="Enter"/>
+          </form>
+          <br><br>
+          <h2>NeXiv</h2>
+          <p>Access my <a href="https://nextcloud.com/">Nextcloud</a>. [Currently disabled]</p>
+          <form action="http://alessandrolussana.giize.com:8088">
+            <input class="button" type="submit" value="Enter"/>
+          </form>
+        </td>
+      </tr>
+    </table>
   </main>
 </body>
 </html>

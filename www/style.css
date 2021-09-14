@@ -23,10 +23,6 @@ main{
   margin-right: auto;
   font-family: helvetica
 }
-table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
-}
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -51,10 +47,6 @@ button{
   background-color:black;
   color:white;
   font-size: 14px;
-}
-table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
 }
 .center {
   margin-left: auto;
@@ -113,8 +105,8 @@ img.orcid {
   padding-right: 9px;
 }
 img.cv {
-  height: 2.2%;
-  width: 2.2%;
+  height: 7.85%;
+  width: 7.85%;
   padding: 3px;
   display: inline-block;
   vertical-align: middle;
@@ -132,4 +124,33 @@ img.cv {
   width: 150px;
   height: 150px;
   background-color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+table td, table th {
+  border: 1px solid white;
+  border-top: 0;
+  width: 33%;
+  vertical-align: top;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
 }
