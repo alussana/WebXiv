@@ -130,7 +130,7 @@ table {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: 1200px;
 }
 table td, table th {
   border: 1px solid white;
@@ -142,15 +142,21 @@ table td, table th {
 }
 table tr:first-child th {
   border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 table tr:last-child td {
   border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
 }
 table tr td:first-child,
 table tr th:first-child {
   border-left: 0;
+  border-right: 0;
 }
 table tr td:last-child,
 table tr th:last-child {
+  border-left: 0;
   border-right: 0;
 }
