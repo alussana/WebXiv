@@ -1,6 +1,7 @@
 FROM nginx
 EXPOSE 80
 RUN apt-get -y update
+RUN apt-get -y install apt-utils
 RUN apt-get -y install php-fpm
 RUN apt-get -y install net-tools
 RUN mkdir -p /var/run/php/
