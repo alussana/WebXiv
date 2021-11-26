@@ -5,7 +5,7 @@ Personal NGINX web server and web archive running in a Docker container.
 
 Currently hosted at [http://alussana.xyz/](http:/alussana.xyz/).
 
-## Start WebXiv
+## Set up and start WebXiv
 
 * Install [Docker](https://www.docker.com/)
 
@@ -27,20 +27,27 @@ Currently hosted at [http://alussana.xyz/](http:/alussana.xyz/).
   $PORT=8080
   ```
 
-* Clone this repository, build and run the docker image.
+* Clone this repository.
 
   ```
   git clone https://github.com/alussana/WebXiv.git
+  ```
+
+* Create `conf/.htpassword` to set up your own credentials to access your files from the WWW. Replace `username` and `password` with your username and password.
+
+  ```
+  echo "username:password" > WebXiv/conf/.htpasswd
+  ```
+
+* Build and run the docker image.
+
+  ```
   cd WebXiv
   ./docker_build.sh
   ./docker_run.sh $VOLUME_DIR $INBOX_DIR $PORT
   ```
 
 * WebXiv should now be reachable at `127.0.0.1:8080`
-
-## Choose Credentials
-
-Edit `conf/.htpassword` to set up your own credentials to access your files from the WWW.
 
 ## Restart WebXiv
 
