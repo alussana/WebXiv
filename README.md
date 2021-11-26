@@ -3,7 +3,7 @@
 Personal NGINX web server and web archive running in a Docker container.
 
 
-Currently hosted at [http://alessandrolussana.giize.com/](http://alessandrolussana.giize.com/).
+Currently hosted at [http://alussana.xyz/](http:/alussana.xyz/).
 
 ## Start WebXiv
 
@@ -21,16 +21,22 @@ Currently hosted at [http://alessandrolussana.giize.com/](http://alessandrolussa
   INBOX_DIR=/your/files/inbox/
   ```
 
+* Choose a port where the server will be exposed on (replace `8080` with the desired port).
+
+  ```
+  $PORT=8080
+  ```
+
 * Clone this repository, build and run the docker image.
 
   ```
   git clone https://github.com/alussana/WebXiv.git
   cd WebXiv
   ./docker_build.sh
-  ./docker_run.sh $VOLUME_DIR $INBOX_DIR
+  ./docker_run.sh $VOLUME_DIR $INBOX_DIR $PORT
   ```
 
-* WebXiv should now be reachable at `127.0.0.1:80`
+* WebXiv should now be reachable at `127.0.0.1:8080`
 
 ## Choose Credentials
 
@@ -50,5 +56,5 @@ Edit `conf/.htpassword` to set up your own credentials to access your files from
 
   ```
   ./docker_build.sh
-  ./docker_run.sh $VOLUME_DIR $INBOX_DIR
+  ./docker_run.sh $VOLUME_DIR $INBOX_DIR $PORT
   ```
