@@ -41,10 +41,10 @@ Currently hosted at [http://alussana.xyz/](http:/alussana.xyz/).
 
 * Create `telegram_bot/.env` to store the API token used by the WebXiv Telegram bot, and an authorized Telegram user ID. If you don't have a token, talk with the [Botfather](https://telegram.me/botfather) to get one. If you don't know your user ID, talk with the [Json Dump Bot](https://t.me/jsondumpbot) to retrieve it.
 
-```
-echo 'TOKEN="yourToken"' > WebXiv/telegram_bot/.env
-echo 'AUTHORIZED_USER="yourId"' >>  WebXiv/telegram_bot/.env
-```
+  ```
+  echo 'TOKEN="yourToken"' > WebXiv/telegram_bot/.env
+  echo 'AUTHORIZED_USER="yourId"' >>  WebXiv/telegram_bot/.env
+  ```
 
 * Build and run the docker image.
 
