@@ -2,9 +2,6 @@
 
 Personal NGINX web server and web archive running in a Docker container.
 
-
-Currently hosted at [http://alussana.xyz/](http:/alussana.xyz/).
-
 ## Set up and start WebXiv
 
 * Install [Docker](https://www.docker.com/)
