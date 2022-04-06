@@ -6,6 +6,8 @@ Personal NGINX web server and web archive running in a Docker container.
 
 * Install [Docker](https://www.docker.com/)
 
+* Install [htpasswd](https://httpd.apache.org/docs/2.4/programs/htpasswd.html)
+
 * Choose a path that you want to be reachable from the WWW.
 
   ```
@@ -21,7 +23,7 @@ Personal NGINX web server and web archive running in a Docker container.
 * Choose a port where the server will be exposed on (replace `8080` with the desired port).
 
   ```
-  $PORT=8080
+  PORT=8080
   ```
 
 * Clone this repository.
@@ -30,11 +32,13 @@ Personal NGINX web server and web archive running in a Docker container.
   git clone https://github.com/alussana/WebXiv.git
   ```
 
-* Create `conf/.htpassword` to set up your own credentials to access your files from the WWW. Replace `username` and `password` with your username and password.
+* Create `conf/.htpassword` to set up your own credentials to access your files from the WWW. Replace `username` with your username.
 
   ```
-  echo "username:password" > WebXiv/conf/.htpasswd
+  htpasswd -c WebXiv/conf/.htpasswd username
   ```
+
+  You will be prompted to enter your password.
 
 * Create `telegram_bot/.env` to store the API token used by the WebXiv Telegram bot, and an authorized Telegram user ID. If you don't have a token, talk with the [Botfather](https://telegram.me/botfather) to get one. If you don't know your user ID, talk with the [Json Dump Bot](https://t.me/jsondumpbot) to retrieve it.
 
